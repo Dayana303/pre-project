@@ -1,7 +1,7 @@
-package jm.task.core.jdbc.dao;
+package jm.task.core.hiber.dao;
 
-import jm.task.core.jdbc.model.User;
-import jm.task.core.jdbc.util.Util;
+import jm.task.core.hiber.model.User;
+import jm.task.core.hiber.util.Util;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -81,10 +81,9 @@ public class UserDaoJDBCImpl implements UserDao {
     public List<User> getAllUsers() {
         List<User> userList = new ArrayList<>();
         try (Connection connection = Util.getConnection();
-             Statement statement = connection.createStatement();
-             ResultSet resultSet = statement.executeQuery(GET_ALL_USER)
+             Statement statement = connection.createStatement()
         ) {
-
+            ResultSet resultSet = statement.executeQuery(GET_ALL_USER);
 
             while (resultSet.next()) {
                 User user = new User();
@@ -105,7 +104,7 @@ public class UserDaoJDBCImpl implements UserDao {
 
     public void cleanUsersTable() {
         try (Connection connection = Util.getConnection()) {
-            connection.createStatement().execute( CLEAN_USERS_TABLE);
+            connection.createStatement().execute(CLEAN_USERS_TABLE);
         } catch (SQLException e) {
             logger.log(Level.WARNING, "Error when clearing table: " + e.getMessage());
         }
