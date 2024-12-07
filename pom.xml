@@ -12,6 +12,7 @@
         <module>git_1_1_1</module>
         <module>JDBC_1_1_3</module>
         <module>hiber_1_1_4</module>
+        <module>SPRING_2.1.2</module>
     </modules>
 
 
