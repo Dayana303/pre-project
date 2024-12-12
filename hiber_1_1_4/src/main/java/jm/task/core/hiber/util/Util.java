@@ -37,6 +37,7 @@ public class Util {
             properties.put(Environment.PASS, PASSWORD);
             properties.put(Environment.DIALECT, "org.hibernate.dialect.MySQL5Dialect");
             properties.put(Environment.SHOW_SQL, "true");
+            properties.put(Environment.HBM2DDL_AUTO, "none");
 
             sessionFactory = new Configuration()
                     .addAnnotatedClass(User.class)
