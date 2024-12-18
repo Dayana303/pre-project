@@ -59,9 +59,9 @@ public class MainApp {
             System.out.println("Model = " + car.getModel());
         }
 
-        System.out.println(userService.getUser("Car4", 4));
+        System.out.println(userService.getUserByModelAndSeries("Car4", 4));
 
-        System.out.println(carService.getCar(user1));
+        System.out.println(carService.getCarByUser(user1));
 
         context.close();
     }

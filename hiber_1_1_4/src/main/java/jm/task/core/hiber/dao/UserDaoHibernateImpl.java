@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 
 public class UserDaoHibernateImpl implements UserDao {
 
+
     private static final String CREATE_TABLE = """
             CREATE TABLE IF NOT EXISTS Users (
                 Id INT AUTO_INCREMENT PRIMARY KEY,

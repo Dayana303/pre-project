@@ -10,5 +10,5 @@ public interface CarService {
 
     List<Car> listCars();
 
-    Car getCar(User user);
+    Car getCarByUser(User user);
 }

@@ -29,14 +29,14 @@ public class CarServiceImpl implements CarService {
     }
 
     @Override
-    @Transactional
+    @Transactional(readOnly = true)
     public List<Car> listCars() {
         return carDao.listCars();
     }
 
     @Override
-    @Transactional
-    public Car getCar(User user) {
-        return carDao.getCar(user);
+    @Transactional(readOnly = true)
+    public Car getCarByUser(User user) {
+        return carDao.getCarByUser(user);
     }
 }
