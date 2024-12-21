@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список автомобилей</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto mt-10">
+    <h1 class="text-3xl font-bold mb-5 text-center">Список автомобилей</h1>
+    <table class="min-w-full bg-white shadow-md rounded-lg overflow-hidden">
+        <thead>
+        <tr class="bg-gray-800 text-white">
+            <th class="py-2 px-4 text-left">Модель</th>
+            <th class="py-2 px-4 text-left">Цвет</th>
+            <th class="py-2 px-4 text-left">Скорость</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="car : ${cars}" class="border-b hover:bg-gray-100">
+            <td class="py-2 px-4" th:text="${car.model}">Модель</td>
+            <td class="py-2 px-4" th:text="${car.color}">Цвет</td>
+            <td class="py-2 px-4" th:text="${car.speed}">Скорость</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
