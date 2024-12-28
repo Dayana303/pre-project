@@ -17,6 +17,8 @@
         <module>SPRING_2.1.4</module>
         <module>Hibernate_ORM_2.2.1</module>
         <module>MVC_2_2_2</module>
+        <module>Spring_MVC_Hibernate_2_3_1</module>
+        <module>Spring_Boot_3_1_1</module>
     </modules>
 
 
