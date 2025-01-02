@@ -19,6 +19,7 @@
         <module>MVC_2_2_2</module>
         <module>Spring_MVC_Hibernate_2_3_1</module>
         <module>Spring_Boot_3_1_1</module>
+        <module>PP_3_1_2_Boot_Security</module>
     </modules>
 
 

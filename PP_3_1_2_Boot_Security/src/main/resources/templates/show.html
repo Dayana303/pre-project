@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show</title>
+</head>
+<body>
+<p th:text="${user.getId()}">VALUE</p>
+<p th:text="${user.getName()}">VALUE</p>
+<p th:text="${user.getEmail()}">VALUE</p>
+
+<h3>Roles:</h3>
+<ul>
+    <li th:each="role : ${user.roles}" th:text="${role.name}">Role Name</li>
+</ul>
+
+<form  sec:authorize="hasRole('ADMIN')" th:action="@{/admin/{id}/edit(id=${user.getId()})}">
+    <input type="submit" value="Edit"/>
+</form>
+
+<hr/>
+
+<form  sec:authorize="hasRole('ADMIN')" th:method="POST" th:action="@{/admin/{id}/delete(id=${user.getId()})}">
+    <input type="submit" value="Delete"/>
+
+<hr/>
+
+<form th:action="@{/logout}">
+    <input type="submit" value="Logout"/>
+</form>
+</body>
+</html>
