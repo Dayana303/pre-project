@@ -21,6 +21,7 @@
         <module>Spring_Boot_3_1_1</module>
         <module>PP_3_1_2_Boot_Security</module>
         <module>PP_3_1_3_Bootstrap</module>
+        <module>PP_3_1_4_Rest_controllers</module>
     </modules>
 
 
