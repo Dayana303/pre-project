@@ -1,8 +1,8 @@
 package ru.kata.spring.boot_security.demo.util;
 
 
-import ru.kata.spring.boot_security.demo.model.dao.Role;
-import ru.kata.spring.boot_security.demo.model.dao.User;
+import ru.kata.spring.boot_security.demo.model.Role;
+import ru.kata.spring.boot_security.demo.model.User;
 
 import java.util.List;
 

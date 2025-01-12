@@ -1,8 +1,8 @@
 package ru.kata.spring.boot_security.demo.services;
 
 import org.springframework.security.core.userdetails.UserDetailsService;
-import ru.kata.spring.boot_security.demo.model.UserDto;
-import ru.kata.spring.boot_security.demo.model.dao.User;
+import ru.kata.spring.boot_security.demo.dto.UserDto;
+import ru.kata.spring.boot_security.demo.model.User;
 
 import java.util.List;
 

@@ -6,9 +6,9 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.kata.spring.boot_security.demo.mapper.UserMapper;
-import ru.kata.spring.boot_security.demo.model.UserDto;
-import ru.kata.spring.boot_security.demo.model.dao.Role;
-import ru.kata.spring.boot_security.demo.model.dao.User;
+import ru.kata.spring.boot_security.demo.dto.UserDto;
+import ru.kata.spring.boot_security.demo.model.Role;
+import ru.kata.spring.boot_security.demo.model.User;
 import ru.kata.spring.boot_security.demo.services.RoleSevice;
 import ru.kata.spring.boot_security.demo.services.UserService;
 

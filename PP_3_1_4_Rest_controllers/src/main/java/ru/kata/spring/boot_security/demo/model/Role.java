@@ -1,4 +1,4 @@
-package ru.kata.spring.boot_security.demo.model.dao;
+package ru.kata.spring.boot_security.demo.model;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

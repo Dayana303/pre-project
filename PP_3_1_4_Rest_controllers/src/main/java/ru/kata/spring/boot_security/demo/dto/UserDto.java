@@ -1,6 +1,6 @@
-package ru.kata.spring.boot_security.demo.model;
+package ru.kata.spring.boot_security.demo.dto;
 
-import ru.kata.spring.boot_security.demo.model.dao.Role;
+import ru.kata.spring.boot_security.demo.model.Role;
 
 import java.util.List;
 
@@ -14,7 +14,7 @@ public class UserDto {
 
     private String password;
 
-    private List<Role> roles;
+    private List<RoleDto> roles;
 
     public Long getId() {
         return id;
@@ -48,11 +48,11 @@ public class UserDto {
         this.password = password;
     }
 
-    public List<Role> getRoles() {
+    public List<RoleDto> getRoles() {
         return roles;
     }
 
-    public void setRoles(List<Role> roles) {
+    public void setRoles(List<RoleDto> roles) {
         this.roles = roles;
     }
 }
